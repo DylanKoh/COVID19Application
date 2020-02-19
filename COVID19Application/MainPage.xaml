@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COVID19Application.MainPage">
+
+    <StackLayout Margin="20, 20, 20, 20">
+        <Label Text="UserID: "></Label>
+        <Entry x:Name="entryUserID" Placeholder="User ID"></Entry>
+        <Label Text="Password: "></Label>
+        <Entry x:Name="entryPassword" Placeholder="Enter your NRIC here"></Entry>
+        <Button Text="Login" x:Name="btnLogin" Clicked="btnLogin_Clicked" />
+    </StackLayout>
+
+</ContentPage>

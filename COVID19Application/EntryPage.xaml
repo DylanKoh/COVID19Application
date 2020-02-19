@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COVID19Application.EntryPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Location Level: "></Label>
+            <Picker x:Name="pLocationLevel"
+                    Title="Select your location level"
+                    SelectedIndexChanged="pLocationLevel_SelectedIndexChanged"></Picker>
+            <Label Text="Location Name: "></Label>
+            <Picker x:Name="pLocation"
+                    Title="Select your location"
+                    ></Picker>
+            <Label Text="Register Date and Time: "></Label>
+            <Grid>
+                <DatePicker x:Name="DPdate" 
+                            Format="dd/MM/yyyy"/>
+                <TimePicker Grid.Column="1" x:Name="TPtime" />
+            </Grid>
+            <Label Text="Temperature: "></Label>
+            <Entry x:Name="entryTemperature" 
+                   Placeholder="Enter your temperature here"
+                   Keyboard="Numeric"></Entry>
+            <Button Text="Submit" x:Name="btnSubmit"
+                    Clicked="btnSubmit_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
