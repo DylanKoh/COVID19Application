@@ -36,7 +36,7 @@ namespace COVID19Application
             else
             {
                 await DisplayAlert("Login", $"Welcome {getResponse.FullName}!", "Ok");
-                await Navigation.PushAsync(new EntryPage(getResponse.ID));
+                await Navigation.PushAsync(new EntryPage(getResponse));
             }
         }
     }

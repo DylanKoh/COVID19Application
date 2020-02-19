@@ -12,7 +12,7 @@ namespace COVID19Application
     public class API
     {
         string loginConnection = "http://10.0.2.2:53104/FTEs/Login";
-        string connection = "http://10.0.2.2:53104";
+        string connection = "http://10.0.2.2:53104/";
         WebClient webClient = new WebClient();
         public API()
         {
