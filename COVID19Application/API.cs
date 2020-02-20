@@ -28,7 +28,11 @@ namespace COVID19Application
                 var returnClass = JsonConvert.DeserializeObject<FTEs>(returnResponseText);
                 return returnClass;
             }
-            return null;
+            else
+            {
+                return null;
+            }
+            
 
         }
         public async Task<string> PostAsync(ContactTracing data, string url)

@@ -20,6 +20,10 @@ namespace COVID19Application
         {
             InitializeComponent();
             _FTE = FTE;
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
             PopulatePickerLevels();
         }
         private async void PopulatePickerLevels()
